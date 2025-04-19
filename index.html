@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming Club</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white">
+  <header class="text-center bg-blue-900 text-white py-10 relative">
+    <img src="https://i.ibb.co/35WR6wKH/Screenshot-2025-04-19-162358.png" alt="Programming and Techskills Club Logo" class="mx-auto w-28 rounded-lg mb-4 shadow-lg">
+    <h1 class="text-4xl font-bold">Programming Club</h1>
+    <p class="text-lg mt-2">Code. Learn. Grow Together.</p>
+    <button onclick="toggleMode()" class="absolute top-4 right-4 bg-yellow-400 text-blue-900 font-bold px-4 py-2 rounded-md">Toggle Mode</button>
+  </header>
+
+  <nav class="bg-blue-800 text-white flex flex-wrap justify-center gap-4 py-4 text-lg font-semibold">
+    <a href="#home" onclick="showSection('home')">Home</a>
+    <a href="#about" onclick="showSection('about')">About</a>
+    <a href="#team" onclick="showSection('team')">Team</a>
+    <a href="#events" onclick="showSection('events')">Events</a>
+    <a href="#resources" onclick="showSection('resources')">Resources</a>
+    <a href="#experience" onclick="showSection('experience')">Member Experience</a>
+    <a href="#join" onclick="showSection('join')">Join Us</a>
+    <a href="#contact" onclick="showSection('contact')">Contact</a>
+  </nav>
+
+  
+        <!-- <div class="w-full mt-8">
+          <img src="https://i.ibb.co/yntPVyh2/img.jpg" alt="Programming Club Secondary Image" class="w-full rounded-xl shadow-lg">
+        </div> -->
+      <div class="flex-1">
+        <h2 class="text-3xl font-bold mb-4">"Empowering minds, one line of code at a time."</h2>
+        <p class="text-lg">Welcome to the Programming Club!</p>
+      </div>
+      <!-- <div class="flex-1">
+        <img src="https://cdn.pixabay.com/photo/2017/01/31/13/14/code-2024217_1280.png" alt="Programming Club Image" class="rounded-xl shadow-xl">
+      </div> -->
+    </div>
+  </section>
+
+  <section id="about" class="hidden py-12 px-4 md:px-20">
+    <h2 class="text-2xl font-bold mb-4">About Us</h2>
+    <p>We are a group of tech enthusiasts who aim to build, share, and grow together through coding and community events.</p>
+  </section>
+
+  <section id="team" class="hidden py-12 px-4 md:px-20">
+    <h2 class="text-2xl font-bold mb-8">Our Team</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+        <h3 class="text-xl font-semibold">John Doe</h3>
+        <p>President</p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+        <h3 class="text-xl font-semibold">Jane Smith</h3>
+        <p>Vice President</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="events" class="hidden py-12 px-4 md:px-20">
+    <h2 class="text-2xl font-bold mb-8">Events</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+        <h3 class="text-xl font-semibold">Hackathon 2025</h3>
+        <p>May 20, 2025</p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+        <h3 class="text-xl font-semibold">Web Dev Workshop</h3>
+        <p>June 5, 2025</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="resources" class="hidden py-12 px-4 md:px-20">
+    <h2 class="text-2xl font-bold mb-8">Resources to Study</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+        <h3 class="text-xl font-semibold">Python Basics</h3>
+        <p><a href="#" class="text-blue-500 underline">Learn More</a></p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+        <h3 class="text-xl font-semibold">Frontend Development</h3>
+        <p><a href="#" class="text-blue-500 underline">Learn More</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="hidden py-12 px-4 md:px-20">
+    <h2 class="text-2xl font-bold mb-4">Member Experience</h2>
+    <p class="mb-6">Read what our members have to say about their journey with the Programming Club!</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+        <p class="italic">"I learned so much from the workshops and met amazing people!"</p>
+        <p class="text-right">- Alex</p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+        <p class="italic">"The events helped me build real-world skills and confidence."</p>
+        <p class="text-right">- Sam</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="join" class="hidden py-12 px-4 md:px-20">
+    <h2 class="text-2xl font-bold mb-6">Join Us</h2>
+    <form class="grid gap-4 max-w-xl mx-auto">
+      <input type="text" placeholder="Full Name" required class="p-3 border border-gray-300 rounded">
+      <input type="email" placeholder="Email Address" required class="p-3 border border-gray-300 rounded">
+      <textarea placeholder="Why do you want to join?" required class="p-3 border border-gray-300 rounded"></textarea>
+      <button type="submit" class="bg-blue-700 text-white py-2 px-6 rounded hover:bg-blue-800">Register</button>
+    </form>
+  </section>
+
+  <section id="contact" class="hidden py-12 px-4 md:px-20">
+    <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+    <p>Email: <a href="mailto:programmingclub@example.com" class="text-blue-500 underline">programmingclub@example.com</a></p>
+    <p class="mb-4">Follow us on <a href="#" class="text-blue-500 underline">Instagram</a> | <a href="#" class="text-blue-500 underline">GitHub</a></p>
+    <button onclick="scrollToTop()" class="bg-yellow-400 text-blue-900 font-bold px-4 py-2 rounded">Back to Top</button>
+  </section>
+
+  <footer class="bg-blue-900 text-white text-center py-6">
+    <p>&copy; 2025 Programming Club. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
